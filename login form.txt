@@ -1,0 +1,62 @@
+<html>
+<head>
+</head>  
+<body style = "text-align: center; font-size: 20px;">  
+    <title>Project Task </title>
+
+    <h1>Student Registration</h1>
+    <style>  
+    input,textarea{width:400px}
+    input[type=radio],input[type=checkbox]{width:15px}
+    input[type=submit],input[type=reset]{width:100px}
+    </style>
+    </head>
+    <centre>
+    <body>
+    <form method="post" enctype="multipart/form-data">
+    
+     <tr>
+         <td colspan="2"><?php echo @$msg; ?></td>
+     </tr>
+      <tr>
+        <td width="159"><b>First Name</b></td>
+        <td width="218">
+        <input type="text"   name="n" pattern="[a-z A-Z]*" required /></td>
+        <br>
+      </tr>
+      <tr>
+      <td width="159"><b>Last Name</b></td>
+        <td width="218">
+        <input type="text"  name="n" pattern="[a-z A-Z]*" required /></td>
+        <br>
+      </tr>
+      <tr>
+        
+        <td><b> mobile number</b></td>
+        <td><input type="text" pattern="[0-9]*" name="m" /></td>
+        <br>
+      </tr>
+      <tr>
+      <td><b> Email ID</b></td>
+        <td><input type="email" name="e"/></td>
+        </tr>
+        <tr>
+        <br>
+        
+       <td><b> current Location</b></td>
+        <td><input type="location" name="l"/></td>
+      </tr>
+      <br>
+      <tr>
+       
+        <input type="submit" name="save"style=" " value="Register"/>
+        <p>
+        already have an account?
+        <a class="sign in" href="login.html">sign in</a>
+        </P>
+                  
+            
+        
+    </form>
+</body>
+    </html>
